@@ -13,4 +13,7 @@ to
                   BTC/USDT (closing price)    ETH/USDT (closing price)   LTC/USDT  
       date
 
-
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
