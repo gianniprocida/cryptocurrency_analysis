@@ -7,9 +7,7 @@ analysis.py -> Tranform data from :
            
 unix   symbol   date   ...  ...            unix   symbol   date  ...   ...            unix   symbol  date ... ...
 
-
-
-First He  | Second Header
---------- | -------------
-Content   | Content l
-Content   | Content 
+Firstr  | Sec
+------- | -------------
+Content | Conte
+Conten  | Conten
