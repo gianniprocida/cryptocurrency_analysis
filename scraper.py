@@ -3,9 +3,8 @@ import os
 import time
 import requests
 from bs4 import BeautifulSoup as bs
-from crypto_task import cryptodata
 
-
+import re
 
 
 DOMAIN = "https://www.cryptodatadownload.com"
@@ -21,28 +20,22 @@ soup = bs(r.content, "html.parser")
 
 files = []
 
-# Parsing for the links
-
+# Parsing for the links (daily prices)
 for item in soup.find_all('a'):
-     link = item.get('href')
-     if 'BTCUSDT_d' in link or 'ETHUSDT_d' in link:
-         print(link.split('/')[-1])
-         files.append(link.split('/'))
-         with open(link.split('/')[-1], 'wb') as file:
-             resp = requests.get(DOMAIN + link, verify= False)
-             file.write(resp.content)
+    if re.sub(r'\s+','',item.get_text())=='[Daily]':
+        link=item.get('href')
+        name=link.split('/')[-1]
+        print(name)
+        files.append(link.split('/'))
+
+        with open (name,'wb') as file:
+            try:
+                resp = requests.get(DOMAIN + link,
+                                    verify=False, timeout=5)
+                file.write(resp.content)
+            except requests.exceptions.ConnectionError:
+                print("Site not rechable",DOMAIN + link)
 
 
-
-# Find all *csv files
-csv_files = [file for file in os.listdir(os.getcwd()) if file.endswith('.csv')]
-
-if __name__=="__main__":
-    for i in range(len(csv_files)):
-        data = cryptodata(csv_files[i])
-        dataset, conn = data.toDataFrame()
-
-else:
-    print("Nothing")
 
 
