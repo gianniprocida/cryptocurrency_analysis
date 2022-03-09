@@ -9,7 +9,9 @@ analysis.py -> Tranform data from :
 unix     | symbol | date  | open  |        
 -------  | -------|------ |------ |    
 Content  | Content|Content|Content|
-Content  | Content|Content|Content|         .........        ...........     ..........  other tables with the same format for every crytpo
+Content  | Content|Content|Content|      
+
+.........        ...........     ..........  other tables with the same format for every crytpo
 
 
 
