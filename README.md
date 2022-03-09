@@ -7,7 +7,7 @@ analysis.py -> Tranform data from :
            
 unix   symbol   date   ...  ...            unix   symbol   date  ...   ...            unix   symbol  date ... ...
 
-unix     | symbol | date  |
--------  | -------|------ |
-Content  | Content|Content|
-Content  | Content|Content|
+unix     | symbol | date  | open  |          
+-------  | -------|------ |------ |
+Content  | Content|Content|Content|
+Content  | Content|Content|Content|
