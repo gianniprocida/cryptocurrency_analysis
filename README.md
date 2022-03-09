@@ -4,7 +4,7 @@ Scrape the historical price for each cryto from https://www.cryptodatadownload.c
 analysis.py -> Tranform data from :
 
     
-
+BTC/USDT 
 
 unix     | symbol | date  | open  |        
 -------  | -------|------ |------ |    
