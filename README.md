@@ -9,11 +9,9 @@ unix   symbol   date   ...  ...            unix   symbol   date  ...   ...      
 
 
 
-to
-                  BTC/USDT (closing price)    ETH/USDT (closing price)   LTC/USDT  
-      date
+
            BTC/USDT
-unix          | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
+unix   symbol   
+---- | ----  |
+     |       |
+     |       |
