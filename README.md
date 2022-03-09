@@ -9,7 +9,7 @@ unix   symbol   date   ...  ...            unix   symbol   date  ...   ...      
 
 
 
-First Header  | Second Header
-  | 
-  | 
-  | 
+First He  | Second Header
+--------- | -------------
+Content   | Content l
+Content   | Content 
