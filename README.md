@@ -29,4 +29,4 @@ date  | BTC/USDT | ETH/USDT  | XRP/USDT  |  ..... |
 ----- | -------  |------     |------     |  ----- | 
 ..... | ......   | ....      |......     |   .....|
 
-where the columns are the closing price
+where the columns are the closing price for each crypto
