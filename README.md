@@ -5,7 +5,7 @@ analysis.py -> Tranform data from :
 
     
  <table>
-<tr><th>Table 1 Heading 1 </th><th>Table 1 Heading 2</th></tr>
+<tr><th> BTC/USDT </th><th>Table 1 Heading 2</th></tr>
 <tr><td>
 
 unix     | symbol | date  | open  |        
