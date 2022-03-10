@@ -8,16 +8,16 @@ analysis.py -> Tranform data from :
 <tr><th> BTC/USDT </th><th> ETH/USDT</th></tr>
 <tr><td>
 
-unix     | symbol | date  | open  |        
--------  | -------|------ |------ |    
-Content  | Content|Content|Content|
-Content  | Content|Content|Content|      
+unix     | symbol | date  | open |        
+-------  | -------|------ |----- |    
+Content  | Content|Content|....  |
+Content  | Content|Content|      |      
     
 </td><td>
 
 unix | symbol | date| open | 
----- |----    |---- |----  |
-.... |....    |.... |...  .|
+.... | ----   |---- |----  |
+.... | ....   |.... |....  |
 
 </td></tr> </table>    
 
