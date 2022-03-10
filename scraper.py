@@ -30,11 +30,11 @@ for item in soup.find_all('a'):
 
         with open (name,'wb') as file:
             try:
-                resp = requests.get(DOMAIN + link,
+                resp = requests.get(link,
                                     verify=False, timeout=5)
                 file.write(resp.content)
             except requests.exceptions.ConnectionError:
-                print("Site not rechable",DOMAIN + link)
+                print("Site not reachable",link)
 
 
 
