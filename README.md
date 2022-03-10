@@ -5,7 +5,7 @@ analysis.py -> Tranform data from :
 
     
  <table>
-<tr><th> BTC/USDT </th><th>Table 1 Heading 2</th></tr>
+<tr><th> BTC/USDT </th><th> ETH/USDT</th></tr>
 <tr><td>
 
 unix     | symbol | date  | open  |        
@@ -15,9 +15,9 @@ Content  | Content|Content|Content|
     
 </td><td>
 
-|b|1|2|3| 
-|--|--|--|--|
-|a|s|d|f|
+unix | symbol | date| open | 
+---- |----    |---- |----  |
+.... |....    |.... |...  .|
 
 </td></tr> </table>    
 
