@@ -8,14 +8,14 @@ analysis.py -> Tranform data from :
 <tr><th> BTC/USDT </th><th> ETH/USDT</th></tr>
 <tr><td>
 
-unix  | symbol | date | open | ....|       
-----  | ------ |----- |----- | ----|   
-..... | ....   | .... |....  | ....|
+unix  | symbol | date | close | ....|       
+----  | ------ |----- |-----  | ----|   
+..... | ....   | .... |....   | ....|
      
     
 </td><td>
 
-unix | symbol | date| open | 
+unix | symbol | date| close| 
 ---- | ----   |---- |----  |
 .... | ....   |.... |....  |
 
@@ -29,4 +29,4 @@ date  | BTC/USDT | ETH/USDT  | XRP/USDT  |  ..... |
 ----- | -------  |------     |------     |  ----- | 
 ..... | ......   | ....      |......     |   .....|
 
-
+where the columns are the closing price
