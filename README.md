@@ -19,15 +19,14 @@ unix | symbol | date| open |
 ---- | ----   |---- |----  |
 .... | ....   |.... |....  |
 
-</td></tr> </table>    
+</td></tr> </table> 
 
-.........        ...........     ..........  other tables with the same format for every crytpo
-
-
+to
 
 
-unix     | symbol | date  | open  |        
--------  | -------|------ |------ |    
-Content  | Content|Content|Content|
-Content  | Content|Content|Content|
+
+date  | BTC/USDT | ETH/USDT  | XRP/USDT  |  ..... |       
+----- | -------  |------     |------     |  ----- | 
+..... | ......   | ....      |......     |   .....|
+
 
