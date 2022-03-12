@@ -1,7 +1,7 @@
 scraper.py -> Scrape the historical price for each cryto from https://www.cryptodatadownload.com/data/binance/#google_vignette as csv file.
 
 
-analysis.py -> Tranform data from :
+analysis.py -> Transform data from :
 
     
  <table>
