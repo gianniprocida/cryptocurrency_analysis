@@ -2,11 +2,10 @@ import sqlite3
 import matplotlib.pyplot as plt
 from pandas import read_csv
 import pandas as pd
-import requests
 import os
 
 
-def set_database(filename1,filename2):
+def set_base(filename1,filename2):
     dataset1 = pd.read_csv(filename1, sep = ',', decimal=',',skiprows=1)
     dataset2 = pd.read_csv(filename2, sep = ',', decimal=',',skiprows=1)
 
@@ -46,12 +45,12 @@ def set_database(filename1,filename2):
     c = conn.cursor()
 
 
-    createTable1 = "create table if not exists " + table_1 + " (unix float, date text,\
-        symbol text, open float, high float,low float, close float, Volume_crypto float, Volume_USDT float);"
+    createTable1 = "create table if not exists {0} (unix float, date text, symbol text, \
+    open float, high float,low float, close float, Volume_crypto float, Volume_USDT float)".format(table_1)
     c.execute(createTable1)
 
-    createTable2 = "create table if not exists " + table_2 + " (unix float, date text,\
-            symbol text, open float, high float,low float, close float, Volume_crypto float, Volume_USDT float);"
+    createTable2 = "create table if not exists {0} (unix float, date text, symbol text, \
+    open float, high float,low float, close float, Volume_crypto float, Volume_USDT float)".format(table_2)
 
     c.execute(createTable1)
 
@@ -90,6 +89,7 @@ FROM {1}, {3} where {1}.date={3}.date".format(table_joined,table_1,column1,table
        sql_drop="drop table tmp"
 
        c.execute(sql_drop)
+       print("Price table with {0} and {1} successfully created ..".format(column1,column2))
 
        conn.commit()
     except sqlite3.Error as e:
@@ -135,7 +135,7 @@ def add(filename,conn):
     # Update price table
 
     sql_updatetable="update price set {1}=(select close from {0} where price.Date={0}.date)".format(table_name1,column)
-    print(sql_updatetable)
+    print("Updating table with {0}".format(column))
     c.execute(sql_updatetable)
 
     conn.commit()
@@ -146,10 +146,10 @@ def add(filename,conn):
 
 if __name__=='__main__':
     csv_files = [file for file in os.listdir(os.getcwd()) if file.endswith('.csv')]
-    c_1=set_database(csv_files[0],csv_files[1])
- #   c_2=add(csv_files[2],c_1)
- #   c_3=add(csv_files[3],c_2)
- #   c_4=add(csv_files[4],c_3)
+    c_1=set_base(csv_files[0],csv_files[1])
+    c_2=add(csv_files[2],c_1)
+    c_3=add(csv_files[3],c_2)
+    c_4=add(csv_files[4],c_3)
 
 
 
