@@ -31,3 +31,6 @@ date  | BTC/USDT | ETH/USDT  | XRP/USDT  |  ..... |
 
 where the columns are the closing price for each crypto
 
+
+analysis.py -> Analysis with pandas ( percentace change and correlation among cryptocurrencies)
+
