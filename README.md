@@ -34,12 +34,13 @@ where the columns are the closing price for each crypto
 
 analysis.py -> Analysis with pandas 
 
-Return distributions.
 
+
+Return distributions
 ![](Figure_1.png)
 
 
- Kernel Density Estimate visualize possible correlations among competing stocks
+ Kernel Density Estimate
 ![](Figure_3.png)
 
 
