@@ -46,7 +46,7 @@ rets=price.pct_change() # % change between the current and prior
 corr=rets.corr()
 
 plt.figure()
-plt.scatter(corr.ETH, corr.LINK)
+plt.scatter(rets.ETH, rets.LINK)
 plt.xlabel('return ETH')
 plt.ylabel('return LINK')
 
