@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
 <style>
-    {
-  box-sizing: border-box;
-}
 .column {
   float: left;
   width: 33.33%;
