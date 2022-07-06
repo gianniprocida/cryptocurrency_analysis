@@ -2,19 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<style>
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
- </style>
 </head>
 <body>
     <h1> Cryptocurrency analysis </h1>
@@ -22,10 +9,7 @@
      <p> Collection of historical OHLC (Open/High/Low/Close) from pricing data (https://www.cryptodatadownload.com/data/binance/). </p>
 <div class="row">
   <div class="column">
-    <img src="Figure_1.png" alt="" style="width:80%">
-  </div>
-  <div class="column">
-    <img src="Figure_3.png" alt="" style="width:70%">
+    <img src="Figure_4.png" alt="" style="width:70%">
   </div>
 </div>
     <h2> Python files </h2>
