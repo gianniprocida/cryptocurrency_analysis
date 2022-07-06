@@ -7,7 +7,7 @@ from pandas.plotting import scatter_matrix
 import  scipy
 
 
-conn = sqlite3.connect('database.db')
+conn = sqlite3.connect('crypto.db')
 
 price=pd.read_sql_query("select * from price",conn)
 
@@ -39,7 +39,7 @@ exp_rets=price['ETH']/price['ETH'].shift(1)-1
 
 
 
-#Analysing competitos cryptocurrencies
+#Analysing competitors cryptocurrencies
 
 rets=price.pct_change() # % change between the current and prior
 
