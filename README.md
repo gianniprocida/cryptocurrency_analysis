@@ -7,11 +7,9 @@
     <h1> Cryptocurrency analysis </h1>
     <hr>
      <p> Collection of historical OHLC (Open/High/Low/Close) from pricing data (https://www.cryptodatadownload.com/data/binance/). </p>
-<div class="row">
   <div class="column">
-    <img src="Figure_4.png" alt="" style="width:70%">
+    <img src="Figure_4.png" alt="" style="width:50%">
   </div>
-</div>
     <h2> Python files </h2>
   <ul>
       <li> scraper.py</li>
